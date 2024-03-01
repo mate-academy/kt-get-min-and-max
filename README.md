@@ -1,4 +1,3 @@
-# Find min and max
+# Find Min and Max
 
-Given an array of integers. Return the array with only two elements. 
-The first element is the minimum value, and the second is the maximum and in an array.
+You have an array of integers. Return a new array with only two elements of the given array: the first with the minimum value and the second with the maximum value.
