@@ -1,10 +1,9 @@
 package mate.academy
 
 fun getMinAndMax(inputArray: IntArray): IntArray {
-    if (inputArray.isEmpty()) return intArrayOf()
+    if (inputArray.isEmpty() || inputArray.minOrNull() == null || inputArray.maxOrNull() == null) {
+        return intArrayOf()
+    }
 
-    val min = inputArray.minOrNull() ?: return intArrayOf()
-    val max = inputArray.maxOrNull() ?: return intArrayOf()
-
-    return intArrayOf(min, max)
+    return intArrayOf(inputArray.minOrNull()!!, inputArray.maxOrNull()!!)
 }
