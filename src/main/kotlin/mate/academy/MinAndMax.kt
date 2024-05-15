@@ -1,9 +1,7 @@
 package mate.academy
 
 fun getMinAndMax(inputArray: IntArray): IntArray {
-    if (inputArray.isEmpty()) {
-        throw IllegalArgumentException("Input array is empty")
-    }
+    require(inputArray.isNotEmpty()) { "Input array is empty" }
 
     inputArray.sort()
 
