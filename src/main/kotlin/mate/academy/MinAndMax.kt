@@ -1,8 +1,7 @@
 package mate.academy
-
+const val CAPACITY_ARRAY = 2
 fun getMinAndMax(inputArray: IntArray): IntArray {
-val minMax : IntArray = IntArray((2) {0})
-    val minMax = IntArray(2) { 0 }
+    val minMax = IntArray(CAPACITY_ARRAY)
     var min = Int.MAX_VALUE
     var max = Int.MIN_VALUE
 
@@ -20,5 +19,4 @@ val minMax : IntArray = IntArray((2) {0})
     minMax[1] = max
 
     return minMax
-
 }
