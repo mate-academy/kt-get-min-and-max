@@ -14,5 +14,5 @@ fun getMinAndMax(inputArray: IntArray): IntArray {
     }
     erer[0] = less
     erer[1] = top
-    return erer
+    return erer;
 }
