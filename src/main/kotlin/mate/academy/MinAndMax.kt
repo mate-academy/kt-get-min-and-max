@@ -8,4 +8,3 @@ fun getMinAndMax(inputArray: IntArray): IntArray {
 
     return intArrayOf(min, max)
 }
-}
