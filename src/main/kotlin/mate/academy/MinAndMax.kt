@@ -1,23 +1,16 @@
 package mate.academy
 
 fun getMinAndMax(inputArray: IntArray): IntArray {
+    if (inputArray.isEmpty()) {
+        throw IllegalArgumentException("Input array must not be empty")
+    }
 
-    var min: Int = inputArray[0]
-    var max = inputArray[1]
-    for (i in 0 until inputArray.size) {
-        if (inputArray[i] < min) {
-            min = inputArray[i]
-        }
-        if (inputArray[i] > max) {
-            max = inputArray[i]
-        }
+    val result = IntArray(2)
+    val min = inputArray.minOrNull() ?: inputArray[0]
+    val max = inputArray.maxOrNull() ?: inputArray[0]
 
-        }
-
-    val result: IntArray = IntArray(2)
-    result.set(0,min)
-    result.set(1,max)
-
+    result[0] = min
+    result[1] = max
 
     return result
 }
