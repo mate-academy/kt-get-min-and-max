@@ -1,9 +1,7 @@
 package mate.academy
 
 fun getMinAndMax(inputArray: IntArray): IntArray {
-    if (inputArray.isEmpty()) {
-        throw IllegalArgumentException("Input array must not be empty")
-    }
+    require(inputArray.isNotEmpty()) { "Input array must not be empty" }
 
     val result = IntArray(2)
     val min = inputArray.minOrNull() ?: inputArray[0]
