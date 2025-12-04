@@ -1,10 +1,5 @@
 package mate.academy
 
-fun main() {
-    val inputArray: IntArray = intArrayOf(72, 4, -7, 33, 3, 9)
-    println(getMinAndMax(inputArray).contentToString())
-}
-
 fun getMinAndMax(inputArray: IntArray): IntArray {
     var min: Int = inputArray[0]
     var max: Int = min
